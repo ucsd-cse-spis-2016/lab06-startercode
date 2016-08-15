@@ -18,7 +18,7 @@ class TestPyFuncs04(unittest.TestCase):
         self.assertEqual( first([2,4,6,8]),2)
 
     def test_first_3(self):
-        self.assertEqual( first((255,0,0),255))
+        self.assertEqual( first((255,0,0)),255)
 
     def test_first_4(self):
         # This is what a test case looks like when you
@@ -41,7 +41,7 @@ class TestPyFuncs04(unittest.TestCase):
         self.assertEqual( rest([2,4,6,8]),[4,6,8])
 
     def test_rest_3(self):
-        self.assertEqual( rest((255,0,0),(0,0)))
+        self.assertEqual( rest((255,0,0)),(0,0))
 
     def test_rest_4(self):
         # This is what a test case looks like when you
@@ -62,7 +62,7 @@ class TestPyFuncs04(unittest.TestCase):
         self.assertEqual( last([2,4,6,8]),8)
 
     def test_last_3(self):
-        self.assertEqual( last((255,0,0),0))
+        self.assertEqual( last((255,0,0)),0)
 
     def test_last_4(self):
         # This is what a test case looks like when you
@@ -85,7 +85,7 @@ class TestPyFuncs04(unittest.TestCase):
         self.assertEqual( allButLast([2,4,6,8]),[2,4,6])
 
     def test_allButLast_3(self):
-        self.assertEqual( allButLast((255,0,0),(255,0)))
+        self.assertEqual( allButLast((255,0,0)),(255,0))
 
     def test_allButLast_4(self):
         # This is what a test case looks like when you
