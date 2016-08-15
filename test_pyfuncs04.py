@@ -56,13 +56,13 @@ class TestPyFuncs04(unittest.TestCase):
     # tests for last
 
     def test_last_1(self):
-        self.assertEqual( last("UCSD"),"U")
+        self.assertEqual( last("UCSD"),"D")
 
     def test_last_2(self):
-        self.assertEqual( last([2,4,6,8]),2)
+        self.assertEqual( last([2,4,6,8]),8)
 
     def test_last_3(self):
-        self.assertEqual( last((255,0,0),255))
+        self.assertEqual( last((255,0,0),0))
 
     def test_last_4(self):
         # This is what a test case looks like when you
